@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "transmep-active-learning"
+version = "0.1.0"
+description = "Active learning on TransMEP to model the whole problem space"
+authors = ["Tilman Hoffbauer <tilman.hoffbauer@rwth-aachen.de>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "transmep_active_learning"}]
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.11"
+transmep = "^0.1.0"
+jupyterlab = "^3.6.1"
+plotly = "^5.13.0"
+numpy = "^1.24.2"
+torch = "1.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
